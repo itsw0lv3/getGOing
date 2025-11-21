@@ -23,7 +23,7 @@ func main() {
   }
 
   // Check for pkgs; need to check for pkg manager!
-  cmd := exec.Command("sudo", "-Ss", userPkgArr[0])
+  cmd := exec.Command("yay", "-Ss", userPkgArr[0])
   cmd.Stdin = os.Stdin
   cmd.Stdout = os.Stdout
   cmd.Stderr = os.Stderr
